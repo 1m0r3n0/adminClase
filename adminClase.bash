@@ -107,8 +107,7 @@ function _modificacion() #FUNCION PARA MODIFICAR LAS NOTAS DEL ALUMNO
 		echo -n " Apellido -> "
 			read mod_apellido
 
-		DATOS=(
-			`grep $mod_nombre:$mod_apellido alumnoDB | cut -d: -f 1` 
+		DATOS=( `grep $mod_nombre:$mod_apellido alumnoDB | cut -d: -f 1` 
 			`grep $mod_nombre:$mod_apellido alumnoDB | cut -d: -f 2` 
 			`grep $mod_nombre:$mod_apellido alumnoDB | cut -d: -f 3` 
 			`grep $mod_nombre:$mod_apellido alumnoDB | cut -d: -f 4` 
